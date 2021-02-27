@@ -1,0 +1,12 @@
+.empty {
+  padding: 2rem;
+  text-align: center;
+}
+
+.listItem {
+  width: 50%;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 1px solid black;
+}

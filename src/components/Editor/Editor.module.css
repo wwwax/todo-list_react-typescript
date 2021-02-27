@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.input,
+button {
+  padding: 1rem;
+  margin: 0 0.5rem;
+  font-family: inherit;
+  font-size: 1.1rem;
+}
