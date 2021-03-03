@@ -11,12 +11,16 @@ const App: React.FC = () => {
     setTodos((prev) => [todo, ...prev]);
   };
 
+  const removeTodo = (id: string) => {
+    setTodos((prev) => prev.filter((item) => item.id !== id));
+  };
+
   return (
     <div>
       <h1 className={styles.title}>Todo list</h1>
 
       <Editor addTodo={addTodo} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} removeTodo={removeTodo} />
     </div>
   );
 };
