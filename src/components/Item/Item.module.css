@@ -13,3 +13,16 @@
   font-size: 2rem;
   border: 2px solid black;
 }
+
+.btns {
+  background-color: lightgreen;
+}
+
+.item label {
+  display: flex;
+  align-items: center;
+}
+
+.item input {
+  margin-right: 1rem;
+}

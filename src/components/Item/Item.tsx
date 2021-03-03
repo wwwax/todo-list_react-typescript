@@ -10,8 +10,15 @@ type Props = {
 const Item: React.FC<Props> = ({ todo, removeTodo }) => {
   return (
     <div className={styles.item}>
-      <div className={styles.title}>{todo.title}</div>
-      <button onClick={() => removeTodo(todo.id)}>delete</button>
+      <label>
+        <input type="checkbox" checked={false} />
+        <span className={styles.title}>{todo.title}</span>
+      </label>
+
+      <div className={styles.btns}>
+        <button>edit</button>
+        <button onClick={() => removeTodo(todo.id)}>delete</button>
+      </div>
     </div>
   );
 };
